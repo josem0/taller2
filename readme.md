@@ -215,6 +215,13 @@ Permite la modificación sobre el tamaño del tablero.
 
 ### Análisis Minimax
 
+Como parte de las consideracioes del taller, se implementó la lógica Minimax para hacer que la CPU evalúe los posibles escenarios 
+para poder ganarnos. Esto se logró brindándole a la CPU la capacidad de análisis en profundidad (dentro del código fue denominado como complejidad)
+en el cual dependiendo de la dificultad seleccionada, se le brinda más o menos nivel de profundidad.
+
+Dentro de las pruebas realizadas durante el desarrollo, se evidenció que mientras más alto el nivel de profundidad, la CPU es capaz de evaluar más escenarios
+lo cual se vió reflejado en las decisiónes tomadas, a diferencia de un nivel de profundidad bajo donde colocaba las fichas en lugares que no suponían un reto
+para el jugador.
 
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
