@@ -55,20 +55,8 @@ Se desarrolló el algoritmo para el juego Conecta 4 según los siguientes requer
 
 ### Consideraciones Extras
 * Se debe incluir en el algoritmo la lógica Minimax
-<div align="center">
-    <img src="imagenes/consideraciones1.png" alt="Logo" width="800" height="300">
-</div>
-
 * Se debe implementar PODA
-<div align="center">
-    <img src="imagenes/consideraciones2.png" alt="Logo" width="800" height="300">
-</div>
-
 * Se debe analizar el desempeño con y sin PODA
-<div align="center">
-    <img src="imagenes/consideraciones2.png" alt="Logo" width="800" height="300">
-</div>
-
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
 
 # Librerías
