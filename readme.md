@@ -32,8 +32,8 @@
           <li><a href="#makemove">makeMove</a></li>
           <li><a href="#undomove">undoMove</a></li>
           <li><a href="#cpumove">cpuMove</a></li>
-          <li><a href="#setlistproductiontoadd">setListProductionsToAdd</a></li>
-          <li><a href="#setlistbrowsertoadd">setListBrowsersToAdd</a></li>
+          <li><a href="#isgameover">isGameOver</a></li>
+          <li><a href="#valoresdefinidos">Valores Definidos</a></li>
           <li><a href="#setlistsecuritiestoadd">setListSecuritiesToAdd</a></li>
           <li><a href="#setlistsocialstoadd">setListSocialsToAdd</a></li>
           <li><a href="#deletesoftware">deleteSoftware</a></li>
@@ -156,8 +156,8 @@ Función de tipo `void`, utilizada para permitirle a la CPU modificar su jugada 
 Función de tipo `int`, utilizada para evaluar la jugada de la CPU aplicando Minimax y PODA.
 
 <div align="center">
-    <img src="imagenes/setListSocials.png" alt="Social" width="800" height="300">
-    <p>moves4.cpp</p>
+    <img src="imagenes/cpuMove.png" alt="Social" width="800" height="300">
+    <p>moves.cpp</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
@@ -171,7 +171,7 @@ Función de tipo `int`, utilizada para revisar el resultado del juego por cada j
 * Juego aún en cursp
 * Empate
 <div align="center">
-    <img src="imagenes/setListGamesToAdd.png" alt="setListGamesToAdd" width="800" height="300">
+    <img src="imagenes/isGameOver.png" alt="setListGamesToAdd" width="800" height="300">
     <p>scores.c</p>
 </div>
 
@@ -183,7 +183,7 @@ Función de tipo `int`, utilizada por la CPU para la evaluación de nodos en fun
 Se incluye también la PODA para optimización análisis de nodos. 
 
 <div align="center">
-    <img src="imagenes/setListProductionsToAdd.png" alt="setListProductionsToAdd" width="800" height="200">
+    <img src="imagenes/minimax.png" alt="setListProductionsToAdd" width="800" height="200">
     <p>minimax.c</p>
 </div>
 
@@ -194,8 +194,8 @@ Se incluye también la PODA para optimización análisis de nodos.
 Función de tipo `int`, utilizada por la CPU para la evaluación del estado del tablero, haciendo uso de puntajes para determinar que jugador está más cerca de ganar. 
 
 <div align="center">
-    <img src="imagenes/setListBrowsersToAdd.png" alt="setListBrowsersToAdd" width="800" height="300">
-    <p>minimax2.cpp</p>
+    <img src="imagenes/evaluatePositions.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>minimax.cpp</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
@@ -205,7 +205,7 @@ Función de tipo `int`, utilizada por la CPU para la evaluación del estado del 
 Permite la modificación sobre el tamaño del tablero.
 
 <div align="center">
-    <img src="imagenes/setListSecuritiesToAdd.png" alt="setListSecuritiesToAdd" width="800" height="300">
+    <img src="imagenes/values.png" alt="setListSecuritiesToAdd" width="800" height="300">
     <p>values.h</p>
 	
 </div>
