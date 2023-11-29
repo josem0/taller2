@@ -24,14 +24,14 @@
     <li>
         <a href="#código">Código</a>
         <ul>
-          <li><a href="#setlistusers">setListUsers</a></li>
-          <li><a href="#setlistgames">setListGames</a></li>
-          <li><a href="#setlistofficesuites">setListOfficeSuites</a></li>
-          <li><a href="#setlistproductions">setListProductions</a></li>
-          <li><a href="#setlistbrowsers">setListBrowsers</a></li>
-          <li><a href="#setlistsecurities">setListSecurities</a></li>
-          <li><a href="#setlistsocial">setListSocial</a></li>
-          <li><a href="#setlistgamestoadd">setListGamesToAdd</a></li>
+          <li><a href="#main">main</a></li>
+          <li><a href="#printheader">printHeader</a></li>
+          <li><a href="#printbroad">printBroad</a></li>
+          <li><a href="#game">game</a></li>
+          <li><a href="#iscolumnfull">isColumnFull</a></li>
+          <li><a href="#makemove">makeMove</a></li>
+          <li><a href="#undomove">undoMove</a></li>
+          <li><a href="#cpumove">cpuMove</a></li>
           <li><a href="#setlistproductiontoadd">setListProductionsToAdd</a></li>
           <li><a href="#setlistbrowsertoadd">setListBrowsersToAdd</a></li>
           <li><a href="#setlistsecuritiestoadd">setListSecuritiesToAdd</a></li>
@@ -69,12 +69,23 @@ Se están utilizando un total de 8 librerías, las cuales se muestran a continua
 # Código
 A continuación se detallan las funcionas usadas en la creación del taller.
 
-## printHeader
-Función de tipo `void`, utilizada para mostrar en la interfaz del tablero el nombre de las columnas.
-Las columnas están nombras desde la 'A' hasta la 'G' para que haya una diferencia notoria con el resto del tablero 
+## main
+Función de tipo `int`, utilizada para mostrar el menú al usuario.
+Permite seleccionar la dificultad del juego así como también regresar luego de cada partida para intentarlo nuevamente. 
 
 <div align="center">
-    <img src="imagenes/setListUsers.png" alt="Usuarios" width="800" height="350">
+    <img src="imagenes/Main.png" alt="Main" width="800" height="350">
+    <p>main.cpp</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## printHeader
+Función de tipo `void`, utilizada para mostrar en la interfaz del tablero el nombre de las columnas.
+Las columnas están nombras desde la 'A' hasta la 'G' para que haya una diferencia notoria con el resto del tablero.
+
+<div align="center">
+    <img src="imagenes/printHeader.png" alt="Broad" width="800" height="350">
     <p>board.c</p>
 </div>
 
@@ -86,8 +97,8 @@ Función de tipo `int`, utilizada para mostrar en la interfaz el tablero, el cua
 Las dimensiones del tablero pueden ser modificadas en los parámetros del algoritmo. 
 
 <div align="center">
-    <img src="imagenes/setListGames.png" alt="Juegos" width="800" height="400">
-    <p>board2.c</p>
+    <img src="imagenes/printBroad.png" alt="Broad" width="800" height="400">
+    <p>board.c</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
@@ -101,7 +112,7 @@ Función de tipo `int`, donde se invoca toda la lógica del juego:
 * Minimax y PODA
 
 <div align="center">
-    <img src="imagenes/setListOfficeSuites.png" alt="Ofimatica" width="800" height="300">
+    <img src="imagenes/game.png" alt="Ofimatica" width="800" height="300">
     <p>game.c</p>
 </div>
 
@@ -112,7 +123,7 @@ Función de tipo `int`, donde se invoca toda la lógica del juego:
 Función de tipo `int`, utilizada para evaluar si la posición ingresada por ambos jugadores pertenece a una columna que se encuentra llena. 
 
 <div align="center">
-    <img src="imagenes/setListProductions.png" alt="Produccion" width="850" height="250">
+    <img src="imagenes/isColumnFull.png" alt="Produccion" width="850" height="250">
     <p>moves.c</p>
 </div>
 
@@ -123,8 +134,8 @@ Función de tipo `int`, utilizada para evaluar si la posición ingresada por amb
 Función de tipo `void`, utilizada para colocar en el tablero la ficha correspondiende a cada jugador dependiendo de la posición que ingresaron. 
 
 <div align="center">
-    <img src="imagenes/setListBrowsers.png" alt="Navegador" width="800" height="400">
-    <p>moves2.c</p>
+    <img src="imagenes/makeMove.png" alt="Navegador" width="800" height="400">
+    <p>moves.c</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
@@ -134,8 +145,8 @@ Función de tipo `void`, utilizada para colocar en el tablero la ficha correspon
 Función de tipo `void`, utilizada para permitirle a la CPU modificar su jugada por una más conveniente según su constante evaluación de nodos. 
 
 <div align="center">
-    <img src="imagenes/setListSecurities.png" alt="Seguridad" width="850" height="300">
-    <p>moves3.cpp</p>
+    <img src="imagenes/undoMove.png" alt="Seguridad" width="850" height="300">
+    <p>moves.cpp</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
