@@ -215,19 +215,34 @@ Permite la modificación sobre el tamaño del tablero.
 
 ### Análisis Minimax
 
-Como parte de las consideracioes del taller, se implementó la lógica Minimax para hacer que la CPU evalúe los posibles escenarios 
-para poder ganarnos. Esto se logró brindándole a la CPU la capacidad de análisis en profundidad (dentro del código fue denominado como complejidad)
-en el cual dependiendo de la dificultad seleccionada, se le brinda más o menos nivel de profundidad.
+Como parte de las consideraciones del taller, se implementó la lógica Minimax para hacer que la CPU evalúe los posibles escenarios 
+para poder ganarnos y de esa manera pueda seleccionar una posición para colocar la ficha. 
 
 Dentro de las pruebas realizadas durante el desarrollo, se evidenció que mientras más alto el nivel de profundidad, la CPU es capaz de evaluar más escenarios
-lo cual se vió reflejado en las decisiónes tomadas, a diferencia de un nivel de profundidad bajo donde colocaba las fichas en lugares que no suponían un reto
+lo cual se vió reflejado en sus decisiónes tomadas, a diferencia de un nivel de profundidad bajo donde colocaba las fichas en lugares que no suponían un reto
 para el jugador.
+
+Sin embargo el hecho de tener un nivel de profundidad alto, implica que debe pasar por todos los escenarios posibles aunque estos no la lleven necesariamente
+a uno en donde salga vencedora pero eso se soluciona en el siguiente punto: PODA de Alpha y Beta.
+
+Para una mejor planificación es mejor elaborar un boceto del árbol de decisiones:
+
+<div align="center">
+    <img src="imagenes/arbolDecisiones.png" alt="setListSecuritiesToAdd" width="800" height="300">
+    <p>Ejemplo reducido</p>
+
+"El arbol mostrado no representa todas las decisiones posibles, sirve como ejemplificación de los escenarios que empieza a evaluar antes de decidir cual tomar"
 
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
 
 ### Análisis PODA
 
+Para evitar que la lógica Minimax tome demasiado tiempo (esto resultó muy útil en los tableros de dimensiones grandes por que se generan más escenarios a diferencia de uno pequeño) esto
+se debe a que la PODA de Alpha y Beta aprovecha la búsqueda de valores máximos o mínimos, en caso encuentre uno que se adecua a la regla planteada, poda los demás nodos (de ahí viene el significado del nombre)
+y evita seguir evaluando el resto de nodos.
+
+En base a las comparativas dentro de la lógica, la diferencia entre aplicar o no PODA resulta notoria al momento de esperar una respuesta por parte de la CPU al momento de aplicar un nivel de profundida alto (esto se aplica en la dificultad dificil o modificable manualmente dentro del código).
 
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
