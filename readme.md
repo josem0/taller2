@@ -216,7 +216,7 @@ Permite la modificación sobre el tamaño del tablero.
 ### Análisis Minimax
 
 Como parte de las consideraciones del taller, se implementó la lógica Minimax para hacer que la CPU evalúe los posibles escenarios 
-para poder ganarnos y de esa manera pueda seleccionar una posición para colocar la ficha. 
+para ganar y de esa manera seleccione la mejor posición para colocar su ficha. 
 
 Dentro de las pruebas realizadas durante el desarrollo, se evidenció que mientras más alto el nivel de profundidad, la CPU es capaz de evaluar más escenarios
 lo cual se vió reflejado en sus decisiónes tomadas, a diferencia de un nivel de profundidad bajo donde colocaba las fichas en lugares que no suponían un reto
@@ -225,13 +225,13 @@ para el jugador.
 Sin embargo el hecho de tener un nivel de profundidad alto, implica que debe pasar por todos los escenarios posibles aunque estos no la lleven necesariamente
 a uno en donde salga vencedora pero eso se soluciona en el siguiente punto: PODA de Alpha y Beta.
 
-Para una mejor planificación es mejor elaborar un boceto del árbol de decisiones:
+Elaborar un boceto del árbol de decisiones sirve como guía visual para entender el comportamiento que tiene la lógica Minimax,
 
 <div align="center">
     <img src="imagenes/arbolDecisiones.png" alt="setListSecuritiesToAdd" width="800" height="300">
     <p>Ejemplo reducido</p>
 
-"El arbol mostrado no representa todas las decisiones posibles, sirve como ejemplificación de los escenarios que empieza a evaluar antes de decidir cual tomar"
+"El arbol usado como ejemplo no representa todas las decisiones posibles"
 
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
