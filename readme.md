@@ -183,7 +183,7 @@ Función de tipo `int`, utilizada por la CPU para la evaluación de nodos en fun
 Se incluye también la PODA para optimización análisis de nodos. 
 
 <div align="center">
-    <img src="imagenes/minimax.png" alt="setListProductionsToAdd" width="800" height="200">
+    <img src="imagenes/minimax.png" alt="setListProductionsToAdd" width="800" height="500">
     <p>minimax.c</p>
 </div>
 
@@ -194,7 +194,7 @@ Se incluye también la PODA para optimización análisis de nodos.
 Función de tipo `int`, utilizada por la CPU para la evaluación del estado del tablero, haciendo uso de puntajes para determinar que jugador está más cerca de ganar. 
 
 <div align="center">
-    <img src="imagenes/evaluatePositions.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <img src="imagenes/evaluatePosition.png" alt="setListBrowsersToAdd" width="800" height="300">
     <p>minimax.cpp</p>
 </div>
 
