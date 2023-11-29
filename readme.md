@@ -37,10 +37,10 @@
       </ul>
     </li>
 	<li>
-        <a href="#analisis-minimax">Análisis Minimax</a>
+        <a href="#análisis-minimax">Análisis Minimax</a>
     </li>
 	<li>
-        <a href="#analisis-poda">Análisis PODA</a>
+        <a href="#análisis-poda">Análisis PODA</a>
     </li>
   </ol>
 </details>
