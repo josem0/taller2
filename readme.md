@@ -33,14 +33,14 @@
           <li><a href="#undomove">undoMove</a></li>
           <li><a href="#cpumove">cpuMove</a></li>
           <li><a href="#isgameover">isGameOver</a></li>
-          <li><a href="#valoresdefinidos">Valores Definidos</a></li>
+          <li><a href="#valores-definidos">Valores Definidos</a></li>
       </ul>
     </li>
 	<li>
-        <a href="#analisisminimax">Análisis Minimax</a>
+        <a href="#analisis-minimax">Análisis Minimax</a>
     </li>
 	<li>
-        <a href="#analisispoda">Análisis PODA</a>
+        <a href="#analisis-poda">Análisis PODA</a>
     </li>
   </ol>
 </details>
