@@ -34,11 +34,13 @@
           <li><a href="#cpumove">cpuMove</a></li>
           <li><a href="#isgameover">isGameOver</a></li>
           <li><a href="#valoresdefinidos">Valores Definidos</a></li>
-          <li><a href="#setlistsecuritiestoadd">setListSecuritiesToAdd</a></li>
-          <li><a href="#setlistsocialstoadd">setListSocialsToAdd</a></li>
-          <li><a href="#deletesoftware">deleteSoftware</a></li>
-          <li><a href="#addsoftware">addSoftware</a></li>
       </ul>
+    </li>
+	<li>
+        <a href="#analisisminimax">Análisis Minimax</a>
+    </li>
+	<li>
+        <a href="#analisispoda">Análisis PODA</a>
     </li>
   </ol>
 </details>
@@ -195,12 +197,12 @@ Función de tipo `int`, utilizada por la CPU para la evaluación del estado del 
 
 <div align="center">
     <img src="imagenes/evaluatePosition.png" alt="setListBrowsersToAdd" width="800" height="300">
-    <p>minimax.cpp</p>
+    <p>minimax.c</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
 
-###Valores definidos
+### Valores definidos
 
 Permite la modificación sobre el tamaño del tablero.
 
@@ -211,32 +213,14 @@ Permite la modificación sobre el tamaño del tablero.
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
 
-## setListSocialsToAdd
+### Análisis Minimax
 
-Función de tipo `vector<Software*>`, utilizada para creación de objetos, relacionar la lista de amigos con el software y posteriormente agregar nuevos software sociales en un vector.
 
-* social3: {nombre: "Facebook"; developer: "Meta Platforms, Inc."; clasificacionEdad: "18"; listaUsuarios: "listUsers"; precio: "0"; usuarios: "listfriends18"}.
-* social4: {nombre: "Instagram"; developer: "Meta Platforms, Inc."; clasificacionEdad: "17"; listaUsuarios: "listUsers"; precio: "0"; usuarios: "listfriends"}.
-<div align="center">
-    <img src="imagenes/setListSocialsToAdd.png" alt="setListSocialsToAdd" width="800" height="300">
-    <p>main.cpp</p>
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
 
-## deleteSoftware
+### Análisis PODA
 
-Función de tipo `vector<Software*>`, utilizada para eliminar un software de la biblioteca, con la condición de que es necesaria la aprobación de todos los usuarios. 
-<div align="center">
-    <img src="imagenes/deleteSoftware.png" alt="deleteSoftware" width="800" height="350">
-    <p>main.cpp</p>
-</div>
-<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
 
-## addSoftware
-
-Función de tipo `vector<Software*>`, utilizada para agregar un software de la biblioteca. 
-<div align="center">
-    <img src="imagenes/addSoftware.png" alt="addSoftware" width="800" height="300">
-    <p>main.cpp</p>
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
