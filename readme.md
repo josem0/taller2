@@ -317,6 +317,9 @@ para el jugador.
 Sin embargo el hecho de tener un nivel de profundidad alto, implica que debe pasar por todos los escenarios posibles aunque estos no la lleven necesariamente
 a uno en donde salga vencedora pero eso se soluciona en el siguiente punto: PODA de Alpha y Beta.
 
+El tener que evaluar cada escenario posible impacta directamente en el tiempo que demora la CPU para tomar una decisón, esto también se ve afectado por el tipo de juego: Un 3 en raya con un tablero de 3x3
+tiene menos escenarios posibles que un Conecta 4 con un tablero de 6x7.
+
 Elaborar un boceto del árbol de decisiones sirve como guía visual para entender el comportamiento que tiene la lógica Minimax,
 
 <div align="center">
