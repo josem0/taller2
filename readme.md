@@ -33,6 +33,17 @@
           <li><a href="#undomove">undoMove</a></li>
           <li><a href="#cpumove">cpuMove</a></li>
           <li><a href="#isgameover">isGameOver</a></li>
+		  <li><a href="#isgameover">isGameOver</a></li>
+		  <li><a href="#minimax">minimax</a></li>
+		  <li><a href="#isgameover">isGameOver</a></li>
+		  <li><a href="#evaluateposition">evaluatePosition</a></li>
+		  <li><a href="#displayMenu">displayMenu</a></li>
+		  <li><a href="#validateoption">validateOption</a></li>
+		  <li><a href="#validateposition">validatePosition</a></li>
+		  <li><a href="#recordwinner">recordWinner</a></li>
+		  <li><a href="#recordmatch">recordMatch</a></li>
+		  <li><a href="#readparameters">readparameters</a></li>
+		  <li><a href="#recordparameters">recordParameters</a></li>
           <li><a href="#valores-definidos">Valores Definidos</a></li>
       </ul>
     </li>
@@ -64,7 +75,7 @@ Se desarrolló el algoritmo para el juego Conecta 4 según los siguientes requer
 # Librerías
 Se están utilizando un total de 8 librerías, las cuales se muestran a continuación.
 <div align="center">
-    <img src="imagenes/Library.png" alt="Library" width="400" height="200">
+    <img src="imagenes/Library.png" alt="Library" width="400" height="400">
     <p>main.cpp</p>
 </div>
 
@@ -75,7 +86,7 @@ A continuación se detallan las funciones usadas en la creación del taller.
 Función de tipo `int`, utilizada para mostrar el menú al usuario, el cual está creado en otra función para mantener el orden del código.
 
 <div align="center">
-    <img src="imagenes/Main.png" alt="Main" width="800" height="350">
+    <img src="imagenes/Main.png" alt="Main" width="400" height="250">
     <p>main.cpp</p>
 </div>
 
@@ -113,7 +124,7 @@ Función de tipo `int`, donde se invoca toda la lógica del juego:
 * Minimax y PODA
 
 <div align="center">
-    <img src="imagenes/game.png" alt="Ofimatica" width="800" height="300">
+    <img src="imagenes/game.png" alt="Ofimatica" width="800" height="400">
     <p>game.c</p>
 </div>
 
@@ -157,7 +168,7 @@ Función de tipo `void`, utilizada para permitirle a la CPU modificar su jugada 
 Función de tipo `int`, utilizada para evaluar la jugada de la CPU aplicando Minimax y PODA.
 
 <div align="center">
-    <img src="imagenes/cpuMove.png" alt="Social" width="800" height="300">
+    <img src="imagenes/cpuMove.png" alt="Social" width="800" height="350">
     <p>moves.cpp</p>
 </div>
 
@@ -172,7 +183,7 @@ Función de tipo `int`, utilizada para revisar el resultado del juego por cada j
 * Juego aún en cursp
 * Empate
 <div align="center">
-    <img src="imagenes/isGameOver.png" alt="setListGamesToAdd" width="800" height="300">
+    <img src="imagenes/isGameOver.png" alt="setListGamesToAdd" width="800" height="350">
     <p>scores.c</p>
 </div>
 
@@ -195,7 +206,7 @@ Se incluye también la PODA para optimización análisis de nodos.
 Función de tipo `int`, utilizada por la CPU para la evaluación del estado del tablero, haciendo uso de puntajes para determinar que jugador está más cerca de ganar. 
 
 <div align="center">
-    <img src="imagenes/evaluatePosition.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <img src="imagenes/evaluatePosition.png" alt="setListBrowsersToAdd" width="800" height="350">
     <p>minimax.c</p>
 </div>
 
@@ -211,7 +222,7 @@ y nos ayuda a mantener un mejor orden del código.
 Función de tipo `int`, donde se establece la lógica de un menú recursivo que le permita al usuario jugar las veces que guste y en las dificultades que prefiera. 
 
 <div align="center">
-    <img src="imagenes/displayMenu.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <img src="imagenes/displayMenu.png" alt="setListBrowsersToAdd" width="800" height="400">
     <p>addons.c</p>
 </div>
 
@@ -266,7 +277,7 @@ Función de tipo `void`, que registra en un archivo CSV la número de partida, g
 Función de tipo `int`, que permite leer un archivo que contiene el número actualizado de partidas jugadas y victorias por cada jugador, de esta manera el programa siempre muestra los valores actualizados cada día. En la primera ejecución del programa se creará dicho archivo.
 
 <div align="center">
-    <img src="imagenes/readParameters.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <img src="imagenes/readParameters.png" alt="setListBrowsersToAdd" width="800" height="400">
     <p>addons.c</p>
 </div>
 
@@ -288,7 +299,7 @@ Función de tipo `void`, que permite actualizar los valores de partidas jugadas 
 Permite la modificación sobre el tamaño del tablero.
 
 <div align="center">
-    <img src="imagenes/values.png" alt="setListSecuritiesToAdd" width="800" height="300">
+    <img src="imagenes/values.png" alt="setListSecuritiesToAdd" width="800" height="400">
     <p>values.h</p>
 	
 </div>
