@@ -323,7 +323,7 @@ Elaborar un boceto del árbol de decisiones sirve como guía visual para entende
     <img src="imagenes/arbolDecisiones.png" alt="setListSecuritiesToAdd" width="800" height="300">
     <p>Ejemplo reducido</p>
 
-"El arbol usado como ejemplo no representa todas las decisiones posibles"
+"El arbol usado como ejemplo no representa todas las decisiones posibles, sirve como una representación de los escenarios que evalúa la CPU para decidir su jugada"
 
 </div>
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
