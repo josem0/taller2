@@ -69,11 +69,10 @@ Se están utilizando un total de 8 librerías, las cuales se muestran a continua
 </div>
 
 # Código
-A continuación se detallan las funcionas usadas en la creación del taller.
+A continuación se detallan las funciones usadas en la creación del taller.
 
 ## main
-Función de tipo `int`, utilizada para mostrar el menú al usuario.
-Permite seleccionar la dificultad del juego así como también regresar luego de cada partida para intentarlo nuevamente. 
+Función de tipo `int`, utilizada para mostrar el menú al usuario, el cual está creado en otra función para mantener el orden del código.
 
 <div align="center">
     <img src="imagenes/Main.png" alt="Main" width="800" height="350">
@@ -198,6 +197,88 @@ Función de tipo `int`, utilizada por la CPU para la evaluación del estado del 
 <div align="center">
     <img src="imagenes/evaluatePosition.png" alt="setListBrowsersToAdd" width="800" height="300">
     <p>minimax.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+### Funciones adicionales
+
+Para complementar la lógica de: Conteo de victorias, Partidas jugadas, Registro de partidas; se crearon diversas funciones que están incluídas dentro de addons.c ya que como su nombre lo indica, funcionan como adicionales a la lógica principal del taller
+y nos ayuda a mantener un mejor orden del código.
+
+## displayMenu
+
+Función de tipo `int`, donde se establece la lógica de un menú recursivo que le permita al usuario jugar las veces que guste y en las dificultades que prefiera. 
+
+<div align="center">
+    <img src="imagenes/displayMenu.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## validateOption
+
+Función de tipo `int`, que ayuda a validar que la opción de dificultad ingresada sea de un valor permitido. 
+
+<div align="center">
+    <img src="imagenes/validateOption.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## validatePosition
+
+Función de tipo `int`, que ayuda a validar que la posición ingresada sea de un valor permitido. 
+
+<div align="center">
+    <img src="imagenes/validatePosition.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## recordWinner
+
+Función de tipo `int`, que aumenta la cantidad de victorias del ganador en cada partida. 
+
+<div align="center">
+    <img src="imagenes/recordWinner.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## recordMatch
+
+Función de tipo `void`, que registra en un archivo CSV la número de partida, ganador, dificultad y el tablero de la partida. 
+
+<div align="center">
+    <img src="imagenes/recordMatch.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## readParameters
+
+Función de tipo `int`, que permite leer un archivo que contiene el número actualizado de partidas jugadas y victorias por cada jugador, de esta manera el programa siempre muestra los valores actualizados cada día. En la primera ejecución del programa se creará dicho archivo.
+
+<div align="center">
+    <img src="imagenes/readParameters.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
+</div>
+
+<p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
+
+## recordParameters
+
+Función de tipo `void`, que permite actualizar los valores de partidas jugadas y victorias dentro del archivo, también funciona como creación del archivo durante la primera ejecución del programa.
+
+<div align="center">
+    <img src="imagenes/recordParameters.png" alt="setListBrowsersToAdd" width="800" height="300">
+    <p>addons.c</p>
 </div>
 
 <p align="right">(<a href="#arriba">Ir a Inicio</a>)</p>
